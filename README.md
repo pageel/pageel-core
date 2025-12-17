@@ -13,6 +13,10 @@ A powerful, client-side Content Management System (CMS) for managing Markdown/MD
   <strong>A modern Git-first CMS for Astro & Next.js</strong>
 </p>
 
+<p align="center">
+  <img src=".github/assets/pageel-dashboard-preview.png" alt="Pageel Dashboard Preview" width="100%">
+</p>
+
 **Quick Links:** [Changelog](./CHANGELOG.md) • [Licenses](./LICENSES.md) • [Contributing](./docs/guides/CONTRIBUTING.md)
 
 ---
