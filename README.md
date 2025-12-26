@@ -173,6 +173,11 @@ pageel-core/
 │   │   ├── index.tsx           # React DOM render
 │   │   ├── types.ts            # TypeScript interfaces & types
 │   │   │
+│   │   ├── features/           # Feature-based architecture (Pro-ready)
+│   │   │   ├── auth/           # IAuthProvider interface
+│   │   │   ├── settings/       # ISettingsProvider, SETTINGS_SCHEMA
+│   │   │   └── navigation/     # useNavigation hook
+│   │   │
 │   │   ├── components/
 │   │   │   ├── Dashboard.tsx       # Main layout with sidebar navigation
 │   │   │   ├── GitServiceConnect.tsx   # Login form component
@@ -352,17 +357,26 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📅 Roadmap
 
-### Version 1.1 (Planned)
+### ✅ Phase 1: Foundation Refactor (Completed)
 
-- **WYSIWYG Markdown Editor:** Rich-text editing for non-technical users
-- **Image Gallery in Editor:** Insert images directly from asset library
+- Feature-based folder structure (`src/features/`)
+- Provider interfaces for extensibility
+- Shared settings schema and defaults
+- Navigation hook with browser history sync
+- Renamed config: `.acmrc.json` → `.pageelrc.json`
 
-### Future Enhancements
+### 🔄 Phase 2: State Management (Planned)
 
+- Zustand for global state
+- Collection TypeScript interfaces
+- Migrate localStorage → IndexedDB
+
+### 🚀 Future Enhancements
+
+- WYSIWYG Markdown Editor
 - GitLab Support
-- Draft Mode with local auto-save
 - Scheduled Publishing
-- Social Sharing integration
+- Image Gallery in Editor
 
 ---
 
@@ -393,5 +407,5 @@ This project is licensed under the **MIT License**. See the [LICENSES.md](./LICE
 ---
 
 <p align="center">
-  Made with ❄️ by <a href="https://pageel.com">Pageel</a>
+  Made with ❄️ by <a href="https://www.pageel.com">Pageel</a>
 </p>
